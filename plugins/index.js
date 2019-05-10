@@ -1,6 +1,11 @@
 
-const mainSitePlugin = require('./main-site');
+const mainSite   = require('./main-site');
+const vision     = require('@hapi/vision');
+const inert      = require('@hapi/inert');
+
 
 module.exports = [
-    mainSitePlugin
+    mainSite,
+    vision,
+    inert
 ]

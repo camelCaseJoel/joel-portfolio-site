@@ -1,0 +1,33 @@
+* {
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* ----- */
+
+.above-menu {
+    background-color: #0e5d8f;
+}
+
+img#me {
+    width: 200px;
+    float: right;
+}
+
+nav {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.centered { width: 1000px; margin: 0 auto; }
+
+div#content {
+    margin-top: 10px;
+}

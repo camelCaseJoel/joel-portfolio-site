@@ -6,12 +6,7 @@
  */
 const home = async (request, h) => {
   
-  return `
-    <h1>Hello, little server</h1>
-    <li>be good</li>
-    <li>dont do stupid shit</li>
-    <li>thats right</li>
-  `
+  return h.view('plugins/main-site/views/home', {myName: 'Joel Rivera Díaz'});
 };
 
 /**

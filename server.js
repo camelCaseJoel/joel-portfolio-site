@@ -1,6 +1,6 @@
-const Hapi     = require('hapi');
-const plugins  = require('./plugins/');
-
+const Hapi       = require('hapi');
+const plugins    = require('./plugins/');
+const handlebars = require('handlebars');
 
 const init = async () => {
 
@@ -19,6 +19,12 @@ const init = async () => {
     });
 
     await server.register(plugins);
+
+    server.views({
+      engines: { html: handlebars },
+      isCached: false
+    });
+
     await server.start();
     console.log('Server running on %ss', server.info.uri);
 };
