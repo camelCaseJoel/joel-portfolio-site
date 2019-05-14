@@ -1,16 +1,17 @@
-* {
-    font-family: "Courier New", Courier, monospace;
-    margin: 0;
-    padding: 0;
-}
+*                { font-family: "Courier New", Courier, monospace; margin: 0; padding: 0; }
+.clearfix::after { content: ""; clear: both; display: table; }
+.centered        { max-width: 1000px; margin: 0 auto; }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+/*
+colors
 
-/* ----- */
+orange         -> #ea8c31
+orange-light   -> #ffaf61
+blue           -> #0e5d8f
+
+*/
+
+/* ---------- HEADER ------------ */
 
 .above-menu {
     background-color: #0e5d8f;
@@ -21,12 +22,51 @@ img#me {
     float: right;
 }
 
-nav {
-    width: 1000px;
-    margin: 0 auto;
+nav.main-menu { 
+    margin-top: 25px;
+
 }
 
-.centered { width: 1000px; margin: 0 auto; }
+header * {
+    color: white;
+}
+
+div.left-head-container {
+    float: left;
+    position: relative;
+    top: 20px;
+}
+
+div.above-menu h3.header-info,
+div.above-menu p.header-info {
+    margin-top: 20px;
+    font-size: 17px;
+}
+div.above-menu h3.header-info i,
+div.above-menu p.header-info i {
+    color: #ffaf61;
+}
+div.above-menu p.header-info.linkedin {
+    margin-top: 10px;
+}
+h3#my-name {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+/* ------------ NAV ------------ */
+
+nav ul li {
+    list-style: none;
+    float: left;
+    color: #0e5d8f;
+    padding: 10px;
+}
+nav ul li:hover {
+    cursor: pointer;
+}
+
+/* ---------- CONTENT ---------- */
 
 div#content {
     margin-top: 10px;
