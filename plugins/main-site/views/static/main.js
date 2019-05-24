@@ -18,7 +18,7 @@ j("div.entry").mouseleave(function () {
 });
 
 
-// ----------------------
+// ---------------------- http://www.rdvial.gob.do/
 
 j("div#paso-rapido").click(function () {
     window.open('https://pasorapido.gob.do/');
@@ -30,4 +30,20 @@ j("div#anim").click(function () {
 
 j("div#mopc").click(function () {
     window.open('http://www.mopc.gob.do/');
+});
+
+j("div#ticket").click(function () {
+    window.open('https://www.tckt.it/');
+});
+
+j("div#milne").click(function () {
+    window.open('https://milnefruit.com/');
+});
+
+j("div#usv").click(function () {
+    window.open('https://www.usvinyl.com/');
+});
+
+j("div#rdvial").click(function () {
+    window.open('http://www.rdvial.gob.do/');
 });

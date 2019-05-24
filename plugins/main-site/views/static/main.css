@@ -190,8 +190,11 @@ div.tech-icons {
     margin-top: 20px;
 }
 div.tech-icons i {
-    font-size: 25px;
+    font-size: 30px;
     color: #555fff;
+}
+div.tech-icons i.bigger {
+    font-size: 35px;
 }
 
 /* ---------- FOOTER ----------- */
