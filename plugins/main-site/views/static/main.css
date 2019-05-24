@@ -1,4 +1,10 @@
-*                { font-family: "Courier New", Courier, monospace; margin: 0; padding: 0; }
+* { 
+    font-family: "Courier New", Courier, monospace; 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    line-height: 150%;
+}
 .clearfix::after { content: ""; clear: both; display: table; }
 .centered        { max-width: 1000px; margin: 0 auto; }
 
@@ -7,19 +13,37 @@ colors
 
 orange         -> #ea8c31
 orange-light   -> #ffaf61
-blue           -> #0e5d8f
+blue           -> #555fff
 
 */
 
+/* ------ GOBAL-CONTAINER ------- */
+div#global-container {
+    
+}
+
 /* ---------- HEADER ------------ */
 
+.background-anim {
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    opacity: 0.4;
+    z-index: -5;
+}
+
 .above-menu {
-    background-color: #0e5d8f;
+    position: relative;
+    
+    height: 120px;
+    z-index: 5;
 }
 
 img#me {
-    width: 200px;
+    width: 100px;
     float: right;
+    position: relative;
+    top: 10px;
 }
 
 nav.main-menu { 
@@ -27,31 +51,54 @@ nav.main-menu {
 
 }
 
+header {
+    height: 120px;
+    
+    background-color: white;
+    
+}
+
 header * {
-    color: white;
+    color: #7b7b7b;
 }
 
 div.left-head-container {
     float: left;
     position: relative;
-    top: 20px;
+    top: 4px;
+    padding-left: 10px;
 }
 
 div.above-menu h3.header-info,
 div.above-menu p.header-info {
-    margin-top: 20px;
+    
     font-size: 17px;
 }
-div.above-menu h3.header-info i,
+
+div.above-menu h3.header-info{
+    margin-top: 15px;
+}
+
+div.above-menu p.header-info.uno {
+    margin-top: 3px;
+}
+div.above-menu p.header-info.dos {
+    
+}
+div.above-menu h3.header-info i {
+    color: black;
+}
+
 div.above-menu p.header-info i {
-    color: #ffaf61;
+    color: #555fff;
 }
 div.above-menu p.header-info.linkedin {
-    margin-top: 10px;
+    margin-top: 4px;
 }
 h3#my-name {
-    font-size: 25px;
+    font-size: 17px;
     font-weight: normal;
+    color: black;
 }
 
 /* ------------ NAV ------------ */
@@ -59,15 +106,95 @@ h3#my-name {
 nav ul li {
     list-style: none;
     float: left;
-    color: #0e5d8f;
+    color: #1400a9;
     padding: 10px;
 }
 nav ul li:hover {
     cursor: pointer;
 }
 
+/* ---------- ABOUT ME --------- */
+div.about-me {
+    height: 100px;
+    background-color: #DDD;
+}
+
 /* ---------- CONTENT ---------- */
 
 div#content {
     margin-top: 10px;
+    padding-top: 0;
+}
+
+div.entry {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    overflow: hidden;
+    height: 200px;
+}
+div.entry * {
+    color: #484848;
+}
+
+div.entry > div.image,
+div.entry > div.info {
+    float: left;
+}
+div.entry > div.image {
+    width: 300px;
+}
+div.entry > div.info {
+    width: 660px;
+    padding: 0 20px;
+    padding-right: 0;
+}
+
+img#me {
+    border-radius: 50%;
+}
+
+div.overlay {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    background-color: #555fffcc;
+    position: relative;
+    
+}
+div.overlay:hover {
+    cursor: pointer;
+}
+
+div.overlay h3 {
+    font-size: 18px;
+    width: 206px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    
+    padding: 10px;
+    padding-top: 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -103px;
+    top: 50%;
+    margin-top: -50px;
+}
+p.description strong {
+    color: #555fff;
+}
+
+div.tech-icons {
+    margin-top: 20px;
+}
+div.tech-icons i {
+    font-size: 25px;
+    color: #555fff;
+}
+
+/* ---------- FOOTER ----------- */
+footer > div{
+    padding: 0 10px;
 }

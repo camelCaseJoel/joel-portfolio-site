@@ -8,51 +8,108 @@
 
     <link href="/main-site/static/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <script src="main-site/static/jquery-3.4.1.min.js"></script>
+    <script src="main-site/static/velocity.min.js"></script>
+    
 </head>
 <body>
     <div id="global-container">
         <header>
             <div class="above-menu">
-                <div class="centered">
+                <div class="centered clearfix" style="position:relative">
                     <div class="left-head-container">
-                        <h3 class="header-info" id="my-name"> Joel Rivera</h3>
-                        <p class="header-info"><i class="fab fa-github"></i> GitHub</p>
-                        <p class="header-info linkedin"><i class="fab fa-linkedin"></i> LinkedIn</p>
+                        <h3 class="header-info" id="my-name"><i class="fal fa-brackets-curly"></i> Joel Rivera</h3>
+                        <p class="header-info uno"><i class="fab fa-github"></i> GitHub</p>
+                        <p class="header-info dos linkedin"><i class="fab fa-linkedin"></i> LinkedIn</p>
                     </div>
                     
-                    <img id="me" src="/main-site/static/joel-pixel.jpeg" alt="my picture in pixels">
-                    <div class="clearfix"></div>
+                    <img id="me" src="/main-site/static/me.jpeg" alt="my picture in pixels">
+                    
+                    <img src="/main-site/static/node-anim-white.gif" alt="nodes animation" class="background-anim">
                 </div>
             </div>
-            <nav class="centered  main-menu">
-                <ul>
+            
+            <!-- <nav class="centered  main-menu">
+                <ul class="clearfix">
                     <li>about_me</li>
                     <li>tech_blog</li>
                     <li>resume</li>
                     <li>portfolio</li>
-                    <div class="clearfix"></div>
+                    
                 </ul>
-            </nav>
+            </nav> -->
         </header>
+        <!-- <div class="about-me">
+
+        </div> -->
         <div id="content" class="centered">
-            <div>
-                <div class="image"><img src="/main-site/static/paso-rapido-300px.gif" alt="site Paso Rapido"></div>
+            <div class="entry clearfix"> <!-- ==================== ENTRY ==================== -->
+                <div class="image">
+                    <img src="/main-site/static/paso-rapido-300px.gif" alt="site Paso Rapido">
+                </div>
+                <div class="info">
+                    <h3 class="title">Website, "Paso Rapido"</h3>
+                    <p class="description">I developed+designed this informational site for the Ministry of Public 
+                        Works(Dominican Republic). This site has a very small <strong>.NET</strong> backend.
+                    </p>
+                    <div class="tech-icons">
+                        <i class="devicon-javascript-plain"></i>    
+                        <i class="devicon-sass-original"></i>
+                        <i class="devicon-dot-net-plain-wordmark"></i>
+                        <i class="devicon-csharp-plain"></i>
+                    </div>
+                </div>
+                <div class="overlay" id="paso-rapido">
+                    <h3 class="click-for-details">Click To See/Learn More</h3>
+                </div>
+                
             </div>
-            <div class="info">
-                <h3 class="title">Website "Paso Rapido"</h3>
-                <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Inventore est, numquam, rerum nesciunt eius earum ab ut cupiditate aut eos, amet odit odio. 
-                    Inventore minima, quis tenetur voluptas aspernatur consequatur.
-                </p>
-                <ul class="tech-details">
-                    <li>Language: JavaScript</li>
-                    <li>Framework: velocity.js</li>
-                </ul>
+            <div class="entry clearfix"> <!-- ==================== ENTRY ==================== -->
+                <div class="image">
+                    <img src="/main-site/static/rdvial-anim-300px.gif" alt="web animation, car racing">
+                </div>
+                <div class="info">
+                    <h3 class="title">Web Animation, "Paso Rapido"</h3>
+                    <p class="description">I animated/illustrated this little promotional web animation for the 
+                        Ministry of Public Works(Dominican Republic). I Used a <strong>JavaScript</strong> time-line animation library called
+                         <strong>GreenSock.js</strong>.
+                    </p>
+                    <div class="tech-icons">
+                        <i class="devicon-javascript-plain"></i>
+                    </div>
+                </div>
+                <div class="overlay" id="anim">
+                    <h3 class="click-for-details">Click To See/Learn More</h3>
+                </div>
             </div>
+            <div class="entry clearfix"> <!-- ==================== ENTRY ==================== -->
+                    <div class="image">
+                        <img src="/main-site/static/mopc-300px.png" alt="Public Works Ministry website">
+                    </div>
+                    <div class="info">
+                        <h3 class="title">Website, "Ministry of Public Works"</h3>
+                        <p class="description">I animated/illustrated this little promotional web animation for the 
+                            Ministry of Public Works(Dominican Republic). I Used a JavaScript library called
+                        </p>
+                        <div class="tech-icons">
+                            <i class="devicon-javascript-plain"></i>    
+                            <i class="devicon-sass-original"></i>
+                            <i class="devicon-dot-net-plain-wordmark"></i>
+                            <i class="devicon-csharp-plain"></i>
+                        </div>
+                    </div>
+                    <div class="overlay" id="mopc">
+                        <h3 class="click-for-details">Click To See/Learn More</h3>
+                    </div>
+                </div>
+            
         </div>
         <footer>
             <div class="centered">Joel Rivera - 2019</div>
         </footer>
     </div>
+    <script src="main-site/static/main.js"></script>
 </body>
 </html>
