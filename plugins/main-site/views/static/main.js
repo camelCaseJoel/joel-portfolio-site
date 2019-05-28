@@ -25,7 +25,7 @@ j("div#paso-rapido").click(function () {
 });
 
 j("div#anim").click(function () {
-    window.open('http://www.rdvial.gob.do/');
+    window.open('/main-site/static/anim-rdvial/index.html');
 });
 
 j("div#mopc").click(function () {
@@ -46,4 +46,8 @@ j("div#usv").click(function () {
 
 j("div#rdvial").click(function () {
     window.open('http://www.rdvial.gob.do/');
+});
+
+j("p.github-link").click(function () {
+    window.open('https://github.com/camelCaseJoel');
 });

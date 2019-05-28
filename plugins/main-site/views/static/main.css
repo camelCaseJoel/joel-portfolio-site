@@ -94,13 +94,20 @@ div.above-menu p.header-info i {
 }
 div.above-menu p.header-info.linkedin {
     margin-top: 4px;
+    text-decoration: line-through;
 }
 h3#my-name {
     font-size: 17px;
     font-weight: normal;
     color: black;
 }
+img#me {
+    border-radius: 50%;
+}
 
+p.github-link {
+    cursor: pointer;
+}
 /* ------------ NAV ------------ */
 
 nav ul li {
@@ -131,6 +138,7 @@ div.entry {
     padding-left: 10px;
     overflow: hidden;
     height: 200px;
+    position: relative;
 }
 div.entry * {
     color: #484848;
@@ -139,18 +147,35 @@ div.entry * {
 div.entry > div.image,
 div.entry > div.info {
     float: left;
+    position: relative;
 }
 div.entry > div.image {
     width: 300px;
+    z-index: 1;
 }
 div.entry > div.info {
     width: 660px;
     padding: 0 20px;
     padding-right: 0;
+    z-index: 2;
+}
+div.image {
+    position: relative;
+    overflow: hidden;
+}
+div.image img {
+    position: relative;
 }
 
-img#me {
-    border-radius: 50%;
+div.image img.thumb {
+    z-index: 1;
+}
+div.image img.plug {
+    position: absolute;
+    width: 73px;
+    top: 101px;
+    left: 234px;
+    z-index: 5;
 }
 
 div.overlay {
@@ -160,7 +185,7 @@ div.overlay {
     top: 200px;
     left: 0;
     background-color: #555fffcc;
-    position: relative;
+    z-index: 5;
     
 }
 div.overlay:hover {

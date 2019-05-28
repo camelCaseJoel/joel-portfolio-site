@@ -1,0 +1,41 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: black;
+}
+
+div.centered_screen{
+	width: 800px;
+	height: 450px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden; /* --------- */ 
+    
+	background-color: #57c5fb; 
+}
+div.centered_screen img{
+	display: none;
+	position: absolute; 
+}
+
+.nube{
+	opacity:0.4;
+}
+
+.carro, #empleada{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.rueda, #pieza_7, #pieza_2{
+    width: 75px;
+}
+
+.sombra{
+    width: 340px;
+}

@@ -20,6 +20,15 @@ module.exports = [
         path: path.join(__dirname, 'views/static/')
       }
     }
+  },
+  {
+    method: 'GET',
+    path: '/main-site/{param*}',
+    handler: {
+      directory: {
+        path: path.join(__dirname, 'views/static/')
+      }
+    }
   }
 ]
 
