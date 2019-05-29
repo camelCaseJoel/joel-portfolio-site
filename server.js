@@ -5,8 +5,8 @@ const handlebars = require('handlebars');
 const init = async () => {
 
     const server = Hapi.server({
-        port: 3000,
-        host: 'localhost'
+        port: 80,
+        host: '167.99.234.18'
     });
 
     server.route({
