@@ -6,7 +6,7 @@
     line-height: 150%;
 }
 .clearfix::after { content: ""; clear: both; display: table; }
-.centered        { max-width: 1000px; margin: 0 auto; }
+.centered        { max-width: 1000px; margin: 0 auto; width: 100%; }
 
 /*
 colors
@@ -129,6 +129,7 @@ div.about-me {
 /* ---------- CONTENT ---------- */
 
 div#content {
+    
     margin-top: 10px;
     padding-top: 0;
 }
@@ -225,4 +226,40 @@ div.tech-icons i.bigger {
 /* ---------- FOOTER ----------- */
 footer > div{
     padding: 0 10px;
+}
+
+/* ========== Responsive design ========== */
+@media (max-width: 1050px) { /* ------------------------- */
+    div.entry {
+        
+    }
+    div.entry > div.image,
+    div.entry > div.info,
+    div.entry > div.overlay {
+        
+    }
+    div.entry > div.image {
+        width: 33%;
+
+    }
+    div.entry > div.info {
+        width: 66%;
+    }
+}
+@media (max-width: 705px) { /* ------------------------- */
+    div.entry {
+        padding-left: 0;
+    }
+    div.image {
+        display: none;
+    }
+    div.entry > div.info {
+        width: 100%;
+        padding-left: 10px;
+    }
+}
+@media (max-width: 560px) {
+    img#me {
+        display: none;
+    }
 }
