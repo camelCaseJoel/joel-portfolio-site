@@ -1,12 +1,18 @@
 const Hapi       = require('hapi');
 const plugins    = require('./plugins/');
 const handlebars = require('handlebars');
+const fs         = require('fs');
+const path       = require('path');
 
 const init = async () => {
 
     const server = Hapi.server({
-        port: 80,
-        host: '167.99.234.18'
+        port: 443,
+        host: '192.168.0.6',
+        tls: {
+          key:  fs.readFileSync(path.join(__dirname, 'key.pem'), 'utf8' ),
+          cert: fs.readFileSync(path.join(__dirname, 'server.crt'), 'utf8' )
+        }
     });
 
     server.route({
