@@ -49,5 +49,5 @@ j("div#rdvial").click(function () {
 });
 
 j("p.github-link").click(function () {
-    window.open('https://github.com/camelCaseJoel');
+    window.open('https://github.com/joel-rivera-diaz');
 });
