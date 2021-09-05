@@ -7,6 +7,7 @@ const path       = require('path');
 const init = async () => {
 
     const server = Hapi.server({
+				port: 80,
         host: '143.198.173.209',
         // tls: {
         //   key:  fs.readFileSync(path.join(__dirname, 'key.pem'), 'utf8' ),
