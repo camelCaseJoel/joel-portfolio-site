@@ -94,7 +94,8 @@ div.above-menu p.header-info i {
 }
 div.above-menu p.header-info.linkedin {
     margin-top: 4px;
-    text-decoration: line-through;
+		cursor: pointer;
+    /* text-decoration: line-through; */
 }
 h3#my-name {
     font-size: 17px;

@@ -51,3 +51,6 @@ j("div#rdvial").click(function () {
 j("p.github-link").click(function () {
     window.open('https://github.com/joel-rivera-diaz');
 });
+j("p.linkedin.header-info.dos").click(function () {
+	window.open('https://www.linkedin.com/in/joel-rivera-aa8900172/');
+});
