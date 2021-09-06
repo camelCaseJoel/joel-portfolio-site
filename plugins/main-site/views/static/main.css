@@ -36,6 +36,13 @@ a.open-source-entry {
 	margin-left: 10px;
 	margin-bottom: 20px;
 	text-decoration: none;
+	color: #484848;
+}
+a.open-source-entry:hover{
+	background-color: #DDDDDD;
+}
+a.open-source-entry strong{
+	color: black;
 }
 div.section-header{
 	margin-top: 40px;
@@ -265,6 +272,9 @@ footer > div{
 
 /* ========== Responsive design ========== */
 @media (max-width: 1050px) { /* ------------------------- */
+	  div#global-container{
+			padding: 20px;
+		}
     div.entry {
         
     }
@@ -292,8 +302,12 @@ footer > div{
         width: 100%;
         padding-left: 10px;
     }
+		img#me {
+			display: none;
+		}
+
 }
-@media (max-width: 560px) {
+@media (max-width: 560px) { /* ------------------------- */
     img#me {
         display: none;
     }
