@@ -21,8 +21,12 @@ blue           -> #555fff
 i.open-section {
 	font-size: 36px;
 	margin-left: 10px;
-	
+	color: #5b6dfb;
 }
+p.personal-description{
+	margin-left: 10px;
+}
+
 span.section-title {
 	font-size: 20px;
   font-weight: bold;
@@ -81,7 +85,7 @@ div#global-container {
 }
 
 img#me {
-    width: 100px;
+    width: 85px;
     float: right;
     position: relative;
     top: 10px;
@@ -132,6 +136,7 @@ div.above-menu h3.header-info i {
 
 div.above-menu p.header-info i {
     color: #555fff;
+		font-size: 20px;
 }
 div.above-menu p.header-info.linkedin {
     margin-top: 4px;

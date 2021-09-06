@@ -6,13 +6,13 @@ const j = jQuery;
 j("div.entry").mouseenter(function () {
     console.log('adf;lasdkjf;asdlj');
     j(this).children("div.overlay").stop(true);
-    j(this).children("div.overlay").velocity({
+    j(this).children("div.overlay").css({
         top: "0px"
     }, 150,);
 });
 j("div.entry").mouseleave(function () {
     j(this).children("div.overlay").stop(true);
-    j(this).children("div.overlay").velocity({
+    j(this).children("div.overlay").css({
         top: "200px"
     }, 150);
 });
