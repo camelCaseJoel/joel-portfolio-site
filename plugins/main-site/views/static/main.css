@@ -17,6 +17,40 @@ blue           -> #555fff
 
 */
 
+/* ------------ Open source section */
+i.open-section {
+	font-size: 36px;
+	margin-left: 10px;
+	
+}
+span.section-title {
+	font-size: 20px;
+  font-weight: bold;
+	position: relative;
+	top: -5px;
+	left: 10px;
+}
+
+a.open-source-entry {
+	display: block;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	text-decoration: none;
+}
+div.section-header{
+	margin-top: 40px;
+}
+
+h1 {
+		font-size: 20px;
+		padding-left: 10px;
+}
+hr{
+	margin-left: 10px;
+	margin-bottom: 15px;
+}
+
+
 /* ------ GOBAL-CONTAINER ------- */
 div#global-container {
     
@@ -98,8 +132,8 @@ div.above-menu p.header-info.linkedin {
     /* text-decoration: line-through; */
 }
 h3#my-name {
-    font-size: 17px;
-    font-weight: normal;
+    font-size: 20px;
+    font-weight: bold;
     color: black;
 }
 img#me {
