@@ -23,7 +23,7 @@ i.open-section {
 	margin-left: 10px;
 	color: #5b6dfb;
 }
-p.personal-description{
+p.personal-description {
 	margin-left: 10px;
 }
 
@@ -42,24 +42,30 @@ a.open-source-entry {
 	text-decoration: none;
 	color: #484848;
 }
-a.open-source-entry:hover{
+a.open-source-entry:hover {
 	background-color: #DDDDDD;
 }
-a.open-source-entry strong{
+a.open-source-entry strong {
 	color: black;
 }
-div.section-header{
-	margin-top: 40px;
+div.section-header {
+	margin-top: 70px;
 }
 
 h1 {
 		font-size: 20px;
 		padding-left: 10px;
 }
-hr{
+hr {
 	margin-left: 10px;
 	margin-bottom: 15px;
 }
+
+/* ----------------------- */
+p.simple-entry {
+	margin-left: 10px;
+}
+
 
 
 /* ------ GOBAL-CONTAINER ------- */
@@ -227,6 +233,7 @@ div.image img.plug {
 }
 
 div.overlay {
+		margin-left: 10px;
     height: 200px;
     width: 100%;
     position: absolute;
@@ -260,11 +267,13 @@ p.description strong {
 }
 
 div.tech-icons {
-    margin-top: 20px;
+    margin-top: 5px;
+		margin-left: 10px;
+		
 }
 div.tech-icons i {
-    font-size: 30px;
-    color: #555fff;
+	font-size: 25px;
+	color: rgb(194 194 194);
 }
 div.tech-icons i.bigger {
     font-size: 35px;

@@ -17,7 +17,7 @@ const conf = {
 
 const init = async () => {
 
-    const server = Hapi.server( conf.dev );
+    const server = Hapi.server( conf.prod );
 
     server.route({
         method: '*',
