@@ -6,7 +6,7 @@ const path       = require('path');
 
 const conf = {
 	prod: {
-		port: 80,
+		port: 3000,
 		host: '143.198.173.209'
 	},
 	dev: {
