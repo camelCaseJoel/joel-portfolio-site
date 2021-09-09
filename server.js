@@ -5,10 +5,10 @@ const fs         = require('fs');
 const path       = require('path');
 
 const conf = {
-	prod: {
-		port: 3000,
-		host: '143.198.173.209'
-	},
+	// prod: {
+	// 	port: 3000,
+	// 	host: '143.198.173.209'
+	// },
 	dev: {
 		port: 3000,
 		host: 'localhost'
@@ -17,7 +17,7 @@ const conf = {
 
 const init = async () => {
 
-    const server = Hapi.server( conf.prod );
+    const server = Hapi.server( conf.dev );
 
     server.route({
         method: '*',
